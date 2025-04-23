@@ -16,17 +16,17 @@ export default function Ground() {
 
   const gridMap = useLoader(
     TextureLoader,
-        "http://localhost:5173/textures/grid.png"
+        import.meta.env.PUBLIC_URL + "/textures/grid.png"
   );
 
   const aoMap = useLoader(
     TextureLoader,
-        "http://localhost:5173/textures/ground-ao.png"
+        import.meta.env.PUBLIC_URL + "/textures/ground-ao.png"
   );
 
   const alphaMap = useLoader(
     TextureLoader,
-        "http://localhost:5173/textures/alpha-map.png"
+        import.meta.env.PUBLIC_URL + "/textures/alpha-map.png"
   );
 
   const meshRef = useRef(null);

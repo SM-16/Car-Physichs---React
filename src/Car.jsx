@@ -9,8 +9,7 @@ import { useControls } from "./useControls";
 
 export default function Car(){
     let mesh = useLoader(
-        GLTFLoader,
-            "http://localhost:5173/models/car.glb"
+        GLTFLoader, import.meta.env.PUBLIC_URL + "/models/car.glb"
     ).scene
     const position = [-1.5, 0.5, 3]
     const width = 0.15

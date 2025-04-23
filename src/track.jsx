@@ -8,19 +8,11 @@ import {Ramp} from "./Ramp"
 export default function tracking(){
     const result = useLoader(
         GLTFLoader,
-            "http://localhost:5173/models/track.glb",
-            undefined,
-            (error) => {
-                console.error('Error loading track model:', error);
-            }
+            import.meta.env.PUBLIC_URL + "/models/track.glb"
     );
     const colorMap = useLoader(
         TextureLoader,
-            "http://localhost:5173/textures/track.png",
-            undefined,
-            (error) => {
-                console.error('Error loading track texture:', error);
-            }
+            import.meta.env.PUBLIC_URL + "/textures/track.png"
     )
     useEffect(()=>{
         colorMap.anisotropy = 16;
