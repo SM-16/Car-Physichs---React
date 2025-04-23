@@ -15,18 +15,15 @@ export default function Ground() {
   );
 
   const gridMap = useLoader(
-    TextureLoader,
-        import.meta.env.PUBLIC_URL + "/textures/grid.png"
+    TextureLoader, ("http://localhost:5173/textures/grid.png"  || "https://car-physichs-react.vercel.app/textures/grid.png")
   );
 
   const aoMap = useLoader(
-    TextureLoader,
-        import.meta.env.PUBLIC_URL + "/textures/ground-ao.png"
+    TextureLoader, ("http://localhost:5173/textures/ground-ao.png"   || "https://car-physichs-react.vercel.app/textures/ground-ao.png")
   );
 
   const alphaMap = useLoader(
-    TextureLoader,
-        import.meta.env.PUBLIC_URL + "/textures/alpha-map.png"
+    TextureLoader, ("http://localhost:5173/textures/alpha-map.png" || "https://car-physichs-react.vercel.app/textures/alpha-map.png")
   );
 
   const meshRef = useRef(null);
