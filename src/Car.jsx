@@ -9,7 +9,7 @@ import { useControls } from "./useControls";
 
 export default function Car(){
     let mesh = useLoader(
-        GLTFLoader, "http://localhost:5173/models/car.glb" || "https://car-physichs-react.vercel.app/models/car.glb"
+        GLTFLoader, "https://car-physichs-react.vercel.app/models/car.glb"
     ).scene
     const position = [-1.5, 0.5, 3]
     const width = 0.15

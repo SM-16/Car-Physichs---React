@@ -4,7 +4,7 @@ import { Environment, OrbitControls, PerspectiveCamera, useEnvironment } from '@
 import { Suspense } from 'react'
 
 function App() {
-  const envMap = useEnvironment({ files: "http://localhost:5173/textures/envmap.hdr" || "https://car-physichs-react.vercel.app/textures/envmap.hdr" })
+  const envMap = useEnvironment({ files: "https://car-physichs-react.vercel.app/textures/envmap.hdr" })
 
   return (
     <Suspense>

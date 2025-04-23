@@ -8,11 +8,11 @@ import {Ramp} from "./Ramp"
 export default function tracking(){
     const result = useLoader(
         GLTFLoader,
-            ("http://localhost:5173/models/track.glb" || "https://car-physichs-react.vercel.app/models/track.glb")
+            ("https://car-physichs-react.vercel.app/models/track.glb")
     );
     const colorMap = useLoader(
         TextureLoader,
-            ("http://localhost:5173/textures/track.png" || "https://car-physichs-react.vercel.app/textures/track.png")
+            ("https://car-physichs-react.vercel.app/textures/track.png")
     )
     useEffect(()=>{
         colorMap.anisotropy = 16;

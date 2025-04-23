@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
 export function Ramp(){
-    const result = useLoader(GLTFLoader,  ("http://localhost:5173/models/ramp.glb" || "https://car-physichs-react.vercel.app/models/ramp.glb"))
+    const result = useLoader(GLTFLoader,  ("https://car-physichs-react.vercel.app/models/ramp.glb"))
     const geometry = result.scene.children[0].geometry
     const vertices = geometry.attributes.position.array
     const indices = geometry.index.array
