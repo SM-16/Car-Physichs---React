@@ -9,7 +9,7 @@ function App() {
   return (
     <Suspense>
       <Environment 
-        files={ import.meta.env.PUBLIC_URL + "/textures/envmap.hdr"}
+        files={"/textures/envmap.hdr"}
         background={"both"}  
         loader={RGBELoader}
       />
